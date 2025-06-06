@@ -23,5 +23,4 @@ class Budget:
     def total_spent(self):
         total = sum(e.amount for e in self.expenses)
         print(f"총 지출: {total}원\n")
-
-
+        return total

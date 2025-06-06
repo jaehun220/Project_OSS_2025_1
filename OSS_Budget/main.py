@@ -15,8 +15,9 @@ def main():
         print("4. 수입 추가")
         print("5. 수입 목록 보기")
         print("6. 총 수입 보기")
-        print("7. 잔액 확인 (흑자/적자)")
-        print("8. 종료")
+        print("7. 수입/지출 내역 확인")
+        print("8. 잔액 확인 (흑자/적자)")
+        print("9. 종료")
         choice = input("선택 > ")
 
         if choice == "1":
@@ -52,9 +53,12 @@ def main():
             earnings.total_earned()
 
         elif choice == "7":
+            tracker.show_full_history()
+            
+        elif choice == "8":
             tracker.check_balance()
 
-        elif choice == "8":
+        elif choice == "9":
             print("가계부를 종료합니다.")
             break
 
